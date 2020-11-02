@@ -1,0 +1,10 @@
+{
+  "words":
+    {"hello": 
+      {"ru": "Привет", "en": "Hello"},
+    "day":
+      {"ru": "День", "pt": "Dia", "en": "Day"},
+    "terms":
+      {"en": "Terms","pt": "Termos"}
+    }
+  }
