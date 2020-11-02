@@ -25,9 +25,9 @@ struct Dictionary: ParsableCommand {
   )
   //делаем опционалы, потому что это необязательные аргументы
   //программа может быть запущена и без них
-  @Option (name: .short)
+  @Option (name: .short, help: "A word to translate")
   var kArgument: String?
-  @Option (name: .short)
+  @Option (name: .short, help: "A language to choose")
   var lArgument: String?
   mutating func run() throws {
     if let words = loadJson(filename: "data"){
