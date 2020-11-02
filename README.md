@@ -13,4 +13,4 @@
       -l <l>                  A language to choose 
       -h/--help, -h, --help   Show help information.
 
-A description of this package.
+Добавлена библиотека PrettyColors, которая позволяет менять цвет и шрифт консольного вывода. Можно явно отделять язык от перевода на этом языке и т.д.
