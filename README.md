@@ -1,7 +1,7 @@
 # web-application
 ### Сборка проекта
 > 
-    git clone https://github.com/aleksandr990316/web-application
+    git clone https://github.com/aleks990316/web-application
     swift build 
 ### Запуск проекта
 > 
