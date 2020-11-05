@@ -1,0 +1,215 @@
+{
+  "": {
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/master.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/BashCompletionsGenerator.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/BashCompletionsGenerator.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/BashCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/BashCompletionsGenerator.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/CompletionsGenerator.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/CompletionsGenerator.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/CompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/CompletionsGenerator.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/FishCompletionsGenerator.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/FishCompletionsGenerator.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/FishCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/FishCompletionsGenerator.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/ZshCompletionsGenerator.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/ZshCompletionsGenerator.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/ZshCompletionsGenerator~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Completions/ZshCompletionsGenerator.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Argument.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Argument.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Argument~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Argument.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/ArgumentHelp.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/ArgumentHelp.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/ArgumentHelp~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/ArgumentHelp.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/CompletionKind.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/CompletionKind.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/CompletionKind~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/CompletionKind.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Errors.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Errors.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Errors~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Errors.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Flag.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Flag.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Flag~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Flag.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/NameSpecification.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/NameSpecification.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/NameSpecification~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/NameSpecification.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Option.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Option.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Option~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/Option.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/OptionGroup.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/OptionGroup.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/OptionGroup~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Properties/OptionGroup.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/CommandConfiguration.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/CommandConfiguration.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/CommandConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/CommandConfiguration.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/EnumerableFlag.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/EnumerableFlag.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/EnumerableFlag~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/EnumerableFlag.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ExpressibleByArgument.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ExpressibleByArgument.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ExpressibleByArgument~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ExpressibleByArgument.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArguments.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArguments.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArguments~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArguments.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArgumentsValidation.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArgumentsValidation.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArgumentsValidation.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArgumentsValidation~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableArgumentsValidation.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableCommand.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableCommand.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableCommand~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsable Types/ParsableCommand.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDecoder.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDecoder.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDecoder~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDecoder.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDefinition.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDefinition.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDefinition~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentDefinition.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentSet.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentSet.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentSet~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ArgumentSet.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/CommandParser.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/CommandParser.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/CommandParser~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/CommandParser.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/InputOrigin.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/InputOrigin.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/InputOrigin~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/InputOrigin.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Name.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Name.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Name~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Name.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Parsed.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Parsed.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Parsed~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/Parsed.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParsedValues.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParsedValues.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParsedValues~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParsedValues.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParserError.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParserError.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParserError~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/ParserError.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/SplitArguments.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/SplitArguments.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/SplitArguments~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Parsing/SplitArguments.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpCommand.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpCommand.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpCommand~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpCommand.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpGenerator.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpGenerator.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpGenerator~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/HelpGenerator.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/MessageInfo.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/MessageInfo.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/MessageInfo~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/MessageInfo.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/UsageGenerator.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/UsageGenerator.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/UsageGenerator~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Usage/UsageGenerator.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/SequenceExtensions.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/SequenceExtensions.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/SequenceExtensions~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/SequenceExtensions.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/StringExtensions.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/StringExtensions.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/StringExtensions~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/StringExtensions.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/Tree.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/Tree.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/Tree~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.build/Utilities/Tree.swiftdeps"
+  }
+}

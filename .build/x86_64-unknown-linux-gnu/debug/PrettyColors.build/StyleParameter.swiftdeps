@@ -1,0 +1,154 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StyleParameter"
+provides-nominal:
+- "12PrettyColors14StyleParameterO"
+- "12PrettyColors14StyleParameterO5ResetV"
+provides-member:
+- ["12PrettyColors14StyleParameterO", ""]
+- ["12PrettyColors14StyleParameterO5ResetV", ""]
+depends-top-level:
+- "=="
+- !private "Array"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Parameter"
+- !private "Reset"
+- "StyleParameter"
+- "UInt8"
+- !private "~="
+depends-member:
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "subscript"]
+- ["SQ", "=="]
+- ["SQ", "Default_RawValue"]
+- ["SQ", "RawValue"]
+- !private ["SQ", "Reset"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "code"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["SH", "=="]
+- ["SH", "Default_RawValue"]
+- ["SH", "RawValue"]
+- !private ["SH", "Reset"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- ["SH", "_rawHashValue"]
+- ["SH", "code"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "rawValue"]
+- !private ["SH", "subscript"]
+- ["12PrettyColors9ParameterP", "=="]
+- ["12PrettyColors9ParameterP", "Default_RawValue"]
+- ["12PrettyColors9ParameterP", "RawValue"]
+- !private ["12PrettyColors9ParameterP", "Reset"]
+- ["12PrettyColors9ParameterP", ""]
+- ["12PrettyColors9ParameterP", "_Default_RawValue"]
+- ["12PrettyColors9ParameterP", "_rawHashValue"]
+- ["12PrettyColors9ParameterP", "code"]
+- ["12PrettyColors9ParameterP", "hash"]
+- ["12PrettyColors9ParameterP", "hashValue"]
+- ["12PrettyColors9ParameterP", "init"]
+- ["12PrettyColors9ParameterP", "rawValue"]
+- ["SY", "=="]
+- ["SY", "Default_RawValue"]
+- ["SY", "RawValue"]
+- !private ["SY", "Reset"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- ["SY", "_rawHashValue"]
+- ["SY", "code"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["12PrettyColors14StyleParameterO5ResetV", "UInt8"]
+- ["12PrettyColors14StyleParameterO5ResetV", "defaultRendition"]
+- ["12PrettyColors14StyleParameterO5ResetV", "dictionary"]
+- ["12PrettyColors14StyleParameterO5ResetV", "init"]
+- !private ["ST", ""]
+- !private ["ST", "subscript"]
+- ["12PrettyColors14StyleParameterO", "=="]
+- ["12PrettyColors14StyleParameterO", "Default_RawValue"]
+- ["12PrettyColors14StyleParameterO", "RawValue"]
+- ["12PrettyColors14StyleParameterO", "Reset"]
+- ["12PrettyColors14StyleParameterO", "UInt8"]
+- ["12PrettyColors14StyleParameterO", ""]
+- ["12PrettyColors14StyleParameterO", "_Default_RawValue"]
+- ["12PrettyColors14StyleParameterO", "_rawHashValue"]
+- ["12PrettyColors14StyleParameterO", "blink"]
+- ["12PrettyColors14StyleParameterO", "blinkSlow"]
+- ["12PrettyColors14StyleParameterO", "bold"]
+- ["12PrettyColors14StyleParameterO", "code"]
+- ["12PrettyColors14StyleParameterO", "concealed"]
+- ["12PrettyColors14StyleParameterO", "crossedOut"]
+- ["12PrettyColors14StyleParameterO", "encircled"]
+- ["12PrettyColors14StyleParameterO", "faint"]
+- ["12PrettyColors14StyleParameterO", "font1"]
+- ["12PrettyColors14StyleParameterO", "font2"]
+- ["12PrettyColors14StyleParameterO", "font3"]
+- ["12PrettyColors14StyleParameterO", "font4"]
+- ["12PrettyColors14StyleParameterO", "font5"]
+- ["12PrettyColors14StyleParameterO", "font6"]
+- ["12PrettyColors14StyleParameterO", "font7"]
+- ["12PrettyColors14StyleParameterO", "font8"]
+- ["12PrettyColors14StyleParameterO", "font9"]
+- ["12PrettyColors14StyleParameterO", "fraktur"]
+- ["12PrettyColors14StyleParameterO", "framed"]
+- ["12PrettyColors14StyleParameterO", "hash"]
+- ["12PrettyColors14StyleParameterO", "hashValue"]
+- ["12PrettyColors14StyleParameterO", "init"]
+- ["12PrettyColors14StyleParameterO", "italic"]
+- ["12PrettyColors14StyleParameterO", "negative"]
+- ["12PrettyColors14StyleParameterO", "normal"]
+- ["12PrettyColors14StyleParameterO", "overlined"]
+- ["12PrettyColors14StyleParameterO", "positive"]
+- ["12PrettyColors14StyleParameterO", "rawValue"]
+- ["12PrettyColors14StyleParameterO", "revealed"]
+- ["12PrettyColors14StyleParameterO", "underlined"]
+- ["12PrettyColors14StyleParameterO", "underlinedDouble"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+depends-nominal:
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s30ExpressibleByDictionaryLiteralP"
+- "SH"
+- "12PrettyColors9ParameterP"
+- "SY"
+- "12PrettyColors14StyleParameterO5ResetV"
+- !private "ST"
+- "12PrettyColors14StyleParameterO"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "0b1ae0100bbc04e2649b40721d21d1db"

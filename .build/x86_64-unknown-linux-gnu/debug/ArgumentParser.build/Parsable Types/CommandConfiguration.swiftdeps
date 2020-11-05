@@ -1,0 +1,66 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CommandConfiguration"
+provides-nominal:
+- "14ArgumentParser20CommandConfigurationV"
+provides-member:
+- ["14ArgumentParser20CommandConfigurationV", ""]
+depends-top-level:
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CommandConfiguration"
+- "NameSpecification"
+- "ParsableCommand"
+- "String"
+- "StringLiteralType"
+depends-member:
+- ["14ArgumentParser20CommandConfigurationV", "Bool"]
+- ["14ArgumentParser20CommandConfigurationV", "NameSpecification"]
+- ["14ArgumentParser20CommandConfigurationV", "ParsableCommand"]
+- ["14ArgumentParser20CommandConfigurationV", "String"]
+- ["14ArgumentParser20CommandConfigurationV", "_superCommandName"]
+- ["14ArgumentParser20CommandConfigurationV", "abstract"]
+- ["14ArgumentParser20CommandConfigurationV", "commandName"]
+- ["14ArgumentParser20CommandConfigurationV", "defaultSubcommand"]
+- ["14ArgumentParser20CommandConfigurationV", "discussion"]
+- ["14ArgumentParser20CommandConfigurationV", "helpNames"]
+- ["14ArgumentParser20CommandConfigurationV", "init"]
+- ["14ArgumentParser20CommandConfigurationV", "shouldDisplay"]
+- ["14ArgumentParser20CommandConfigurationV", "subcommands"]
+- !private ["14ArgumentParser20CommandConfigurationV", "superCommandName"]
+- ["14ArgumentParser20CommandConfigurationV", "version"]
+- ["Se", ""]
+- !private ["14ArgumentParser17NameSpecificationV7ElementO", "long"]
+- !private ["14ArgumentParser17NameSpecificationV7ElementO", "short"]
+- !private ["SQ", ""]
+- !private ["SQ", "long"]
+- !private ["SQ", "short"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["SH", "long"]
+- !private ["SH", "short"]
+- ["14ArgumentParser17NameSpecificationV", ""]
+- ["14ArgumentParser17ParsableArgumentsP", ""]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "14ArgumentParser20CommandConfigurationV"
+- "Se"
+- !private "14ArgumentParser17NameSpecificationV7ElementO"
+- !private "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- "14ArgumentParser17NameSpecificationV"
+- "14ArgumentParser17ParsableArgumentsP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "a11d9ea284c6b78df09126c992e89483"
