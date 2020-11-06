@@ -878,4 +878,4 @@ depends-external:
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
-interface-hash: "77cbf8f86301321e30d74baf2f8f471a"
+interface-hash: "962880f9f0db36ec5f19a657251dffc3"
