@@ -1,37 +1,54 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "loadJson"
-- "uploadJSON"
-- "outAll"
-- "outTranslations"
-- "outLiterals"
-- "outTranslation"
-- "Dictionary"
+- "Arguments"
+- "ArgumentsParserProtocol"
+- "ArgumentsParser"
+- "DataBaseProtocol"
+- "DataBase"
+- "FilterDataProtocol"
+- "Filter"
+- "Container"
+- "main"
 provides-nominal:
-- "15web_application10DictionaryV"
-- "15web_application10DictionaryV6SearchV"
-- "15web_application10DictionaryV6UpdateV"
-- "15web_application10DictionaryV6DeleteV"
+- "15web_application9ArgumentsO"
+- "15web_application23ArgumentsParserProtocolP"
+- "15web_application15ArgumentsParserC"
+- "15web_application16DataBaseProtocolP"
+- "15web_application8DataBaseC"
+- "15web_application18FilterDataProtocolP"
+- "15web_application6FilterC"
+- "15web_application9ContainerC"
 provides-member:
-- ["15web_application10DictionaryV", ""]
-- ["15web_application10DictionaryV6SearchV", ""]
-- ["15web_application10DictionaryV6UpdateV", ""]
-- ["15web_application10DictionaryV6DeleteV", ""]
-- ["15web_application10DictionaryV", "Search"]
-- ["15web_application10DictionaryV", "Update"]
-- ["15web_application10DictionaryV", "Delete"]
+- ["15web_application9ArgumentsO", ""]
+- ["15web_application23ArgumentsParserProtocolP", ""]
+- ["15web_application15ArgumentsParserC", ""]
+- ["15web_application16DataBaseProtocolP", ""]
+- ["15web_application8DataBaseC", ""]
+- ["15web_application18FilterDataProtocolP", ""]
+- ["15web_application6FilterC", ""]
+- ["15web_application9ContainerC", ""]
 depends-top-level:
-- !private "+="
+- !private "!"
 - "=="
 - "Argument"
+- "Arguments"
+- "ArgumentsParser"
+- "ArgumentsParserProtocol"
 - "Array"
 - "AssignmentPrecedence"
 - !private "Bundle"
 - !private "Color"
 - "CommandConfiguration"
+- !private "CommandLine"
+- "Commands"
+- "Container"
 - !private "Data"
+- "DataBase"
+- "DataBaseProtocol"
 - "Delete"
-- "Dictionary"
+- !private "Dictionary"
+- "Filter"
+- "FilterDataProtocol"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "JSONDecoder"
@@ -43,16 +60,10 @@ depends-top-level:
 - "StringLiteralType"
 - !private "UnicodeScalarType"
 - "Update"
-- !private "key"
-- !private "language"
-- "loadJson"
-- "outAll"
-- "outLiterals"
-- "outTranslation"
-- "outTranslations"
+- "main"
 - !private "print"
-- "uploadJSON"
-- !private "word"
+- !private "uploadJSON"
+- !private "words"
 - !private "~="
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
@@ -69,17 +80,41 @@ depends-member:
 - ["14ArgumentParser0A0V", "wrapperValue"]
 - !private ["14ArgumentParser0A18HelpOptionProviderP", "blue"]
 - !private ["14ArgumentParser0A18HelpOptionProviderP", "cyan"]
+- !private ["14ArgumentParser0A18HelpOptionProviderP", "delete"]
 - !private ["14ArgumentParser0A18HelpOptionProviderP", "green"]
 - !private ["14ArgumentParser0A18HelpOptionProviderP", "magenta"]
 - !private ["14ArgumentParser0A18HelpOptionProviderP", "red"]
+- !private ["14ArgumentParser0A18HelpOptionProviderP", "search"]
+- !private ["14ArgumentParser0A18HelpOptionProviderP", "update"]
 - !private ["14ArgumentParser0A18HelpOptionProviderP", "yellow"]
 - ["14ArgumentParser0A11SetProviderP", ""]
 - ["14ArgumentParser0A11SetProviderP", "init"]
 - ["14ArgumentParser0A11SetProviderP", "wrappedValue"]
+- ["15web_application9ArgumentsO", "String"]
+- ["15web_application9ArgumentsO", "delete"]
+- ["15web_application9ArgumentsO", "search"]
+- ["15web_application9ArgumentsO", "update"]
+- ["15web_application15ArgumentsParserC", "Arguments"]
+- !private ["15web_application15ArgumentsParserC", "CommandLine"]
+- !private ["15web_application15ArgumentsParserC", "Commands"]
+- !private ["15web_application15ArgumentsParserC", ""]
+- ["15web_application15ArgumentsParserC", "deinit"]
+- ["15web_application15ArgumentsParserC", "init"]
+- ["15web_application15ArgumentsParserC", "parsing"]
+- !private ["15web_application15ArgumentsParserC", "print"]
+- ["15web_application23ArgumentsParserProtocolP", "Arguments"]
+- !private ["15web_application23ArgumentsParserProtocolP", "CommandLine"]
+- !private ["15web_application23ArgumentsParserProtocolP", "Commands"]
+- ["15web_application23ArgumentsParserProtocolP", ""]
+- !private ["15web_application23ArgumentsParserProtocolP", "init"]
+- ["15web_application23ArgumentsParserProtocolP", "parsing"]
+- !private ["15web_application23ArgumentsParserProtocolP", "print"]
+- !private ["Sa", "subscript"]
 - !private ["SK", ""]
 - !private ["SK", "callAsFunction"]
 - !private ["SK", "init"]
 - !private ["SK", "lowercased"]
+- !private ["SK", "subscript"]
 - !private ["SK", "write"]
 - !private ["Sz", ""]
 - !private ["Sz", "blue"]
@@ -109,6 +144,7 @@ depends-member:
 - !private ["Sl", ""]
 - !private ["Sl", "callAsFunction"]
 - !private ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
 - !private ["Sl", "lowercased"]
 - !private ["Sl", "removeValue"]
 - !private ["Sl", "subscript"]
@@ -123,6 +159,7 @@ depends-member:
 - !private ["12PrettyColors5ColorV5NamedVABO", "red"]
 - !private ["12PrettyColors5ColorV5NamedVABO", "yellow"]
 - ["14ArgumentParser20CommandConfigurationV", "init"]
+- !private ["s11CommandLineO", "arguments"]
 - !private ["SL", ""]
 - !private ["SL", "blue"]
 - !private ["SL", "callAsFunction"]
@@ -132,7 +169,19 @@ depends-member:
 - !private ["SL", "magenta"]
 - !private ["SL", "red"]
 - !private ["SL", "yellow"]
+- !private ["15web_application9ContainerC", "ArgumentsParser"]
+- ["15web_application9ContainerC", "ArgumentsParserProtocol"]
+- !private ["15web_application9ContainerC", "DataBase"]
+- ["15web_application9ContainerC", "DataBaseProtocol"]
+- !private ["15web_application9ContainerC", "Filter"]
+- ["15web_application9ContainerC", "FilterDataProtocol"]
+- ["15web_application9ContainerC", "argumentsParser"]
+- ["15web_application9ContainerC", "dataBase"]
+- ["15web_application9ContainerC", "deinit"]
+- ["15web_application9ContainerC", "filter"]
+- ["15web_application9ContainerC", "init"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["10Foundation15ContiguousBytesP", "write"]
 - ["s28CustomDebugStringConvertibleP", "=="]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -141,19 +190,23 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "callAsFunction"]
 - !private ["s28CustomDebugStringConvertibleP", "cyan"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- !private ["s28CustomDebugStringConvertibleP", "delete"]
 - ["s28CustomDebugStringConvertibleP", "description"]
 - !private ["s28CustomDebugStringConvertibleP", "green"]
 - ["s28CustomDebugStringConvertibleP", "hash"]
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "lowercased"]
 - !private ["s28CustomDebugStringConvertibleP", "magenta"]
 - !private ["s28CustomDebugStringConvertibleP", "module"]
 - !private ["s28CustomDebugStringConvertibleP", "red"]
 - !private ["s28CustomDebugStringConvertibleP", "removeValue"]
+- !private ["s28CustomDebugStringConvertibleP", "search"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "update"]
 - !private ["s28CustomDebugStringConvertibleP", "updateValue"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
 - !private ["s28CustomDebugStringConvertibleP", "write"]
@@ -161,13 +214,17 @@ depends-member:
 - !private ["s17CustomReflectableP", "blue"]
 - !private ["s17CustomReflectableP", "callAsFunction"]
 - !private ["s17CustomReflectableP", "cyan"]
+- !private ["s17CustomReflectableP", "delete"]
 - !private ["s17CustomReflectableP", "green"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "lowercased"]
 - !private ["s17CustomReflectableP", "magenta"]
 - !private ["s17CustomReflectableP", "red"]
 - !private ["s17CustomReflectableP", "removeValue"]
+- !private ["s17CustomReflectableP", "search"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "update"]
 - !private ["s17CustomReflectableP", "updateValue"]
 - !private ["s17CustomReflectableP", "write"]
 - !private ["s17CustomReflectableP", "yellow"]
@@ -186,6 +243,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "lowercased"]
 - !private ["s23CustomStringConvertibleP", "magenta"]
 - !private ["s23CustomStringConvertibleP", "module"]
@@ -200,8 +258,42 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "yellow"]
 - !private ["10Foundation4DataV", "init"]
 - !private ["10Foundation4DataV", "write"]
+- !private ["15web_application8DataBaseC", "Bundle"]
+- !private ["15web_application8DataBaseC", "Color"]
+- !private ["15web_application8DataBaseC", "Data"]
+- ["15web_application8DataBaseC", "DataBase"]
+- !private ["15web_application8DataBaseC", "JSONDecoder"]
+- !private ["15web_application8DataBaseC", "JSONEncoder"]
+- ["15web_application8DataBaseC", "String"]
+- !private ["15web_application8DataBaseC", ""]
+- ["15web_application8DataBaseC", "deinit"]
+- ["15web_application8DataBaseC", "deleteData"]
+- ["15web_application8DataBaseC", "getData"]
+- ["15web_application8DataBaseC", "init"]
+- ["15web_application8DataBaseC", "loadJson"]
+- !private ["15web_application8DataBaseC", "print"]
+- ["15web_application8DataBaseC", "updateData"]
+- !private ["15web_application8DataBaseC", "uploadJSON"]
+- !private ["15web_application8DataBaseC", "words"]
+- !private ["15web_application16DataBaseProtocolP", "Bundle"]
+- !private ["15web_application16DataBaseProtocolP", "Color"]
+- !private ["15web_application16DataBaseProtocolP", "Data"]
+- ["15web_application16DataBaseProtocolP", "DataBase"]
+- !private ["15web_application16DataBaseProtocolP", "JSONDecoder"]
+- !private ["15web_application16DataBaseProtocolP", "JSONEncoder"]
+- ["15web_application16DataBaseProtocolP", "String"]
+- ["15web_application16DataBaseProtocolP", ""]
+- ["15web_application16DataBaseProtocolP", "deleteData"]
+- ["15web_application16DataBaseProtocolP", "getData"]
+- !private ["15web_application16DataBaseProtocolP", "init"]
+- ["15web_application16DataBaseProtocolP", "loadJson"]
+- !private ["15web_application16DataBaseProtocolP", "print"]
+- ["15web_application16DataBaseProtocolP", "updateData"]
+- !private ["15web_application16DataBaseProtocolP", "uploadJSON"]
+- !private ["15web_application16DataBaseProtocolP", "words"]
 - !private ["10Foundation12DataProtocolP", ""]
 - !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "write"]
 - ["Se", "Argument"]
 - ["Se", "CommandConfiguration"]
@@ -221,26 +313,24 @@ depends-member:
 - ["Se", "commandName"]
 - ["Se", "configuration"]
 - !private ["Se", "cyan"]
+- !private ["Se", "delete"]
 - ["Se", "errorLabel"]
 - !private ["Se", "green"]
+- !private ["Se", "helpMessage"]
 - ["Se", "init"]
+- !private ["Se", "isEmpty"]
 - !private ["Se", "key"]
 - !private ["Se", "language"]
-- !private ["Se", "loadJson"]
 - !private ["Se", "lowercased"]
 - !private ["Se", "magenta"]
-- ["Se", "main"]
-- !private ["Se", "outAll"]
-- !private ["Se", "outLiterals"]
-- !private ["Se", "outTranslation"]
-- !private ["Se", "outTranslations"]
-- !private ["Se", "print"]
+- !private ["Se", "parseAsRoot"]
 - !private ["Se", "red"]
 - !private ["Se", "removeValue"]
 - ["Se", "run"]
+- !private ["Se", "search"]
 - !private ["Se", "subscript"]
+- !private ["Se", "update"]
 - !private ["Se", "updateValue"]
-- !private ["Se", "uploadJSON"]
 - ["Se", "validate"]
 - !private ["Se", "word"]
 - ["Se", "wrappedValue"]
@@ -251,70 +341,41 @@ depends-member:
 - !private ["s7DecoderP", "container"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
-- ["15web_application10DictionaryV6DeleteV", "CodingKeys"]
-- ["15web_application10DictionaryV6DeleteV", "CommandConfiguration"]
-- ["15web_application10DictionaryV6DeleteV", "Option"]
-- ["15web_application10DictionaryV6DeleteV", "String"]
-- ["15web_application10DictionaryV6DeleteV", ""]
-- ["15web_application10DictionaryV6DeleteV", "_commandName"]
-- ["15web_application10DictionaryV6DeleteV", "_errorLabel"]
-- !private ["15web_application10DictionaryV6DeleteV", "_key"]
-- !private ["15web_application10DictionaryV6DeleteV", "_language"]
-- ["15web_application10DictionaryV6DeleteV", "commandName"]
-- ["15web_application10DictionaryV6DeleteV", "configuration"]
-- ["15web_application10DictionaryV6DeleteV", "errorLabel"]
-- ["15web_application10DictionaryV6DeleteV", "init"]
-- ["15web_application10DictionaryV6DeleteV", "key"]
-- ["15web_application10DictionaryV6DeleteV", "language"]
-- !private ["15web_application10DictionaryV6DeleteV", "loadJson"]
-- !private ["15web_application10DictionaryV6DeleteV", "print"]
-- ["15web_application10DictionaryV6DeleteV", "run"]
-- !private ["15web_application10DictionaryV6DeleteV", "uploadJSON"]
-- ["15web_application10DictionaryV6DeleteV", "validate"]
-- ["15web_application10DictionaryV", "Argument"]
-- ["15web_application10DictionaryV", "CodingKeys"]
-- ["15web_application10DictionaryV", "CommandConfiguration"]
-- ["15web_application10DictionaryV", "Delete"]
-- ["15web_application10DictionaryV", "Option"]
-- ["15web_application10DictionaryV", "ParsableCommand"]
-- ["15web_application10DictionaryV", "Search"]
-- ["15web_application10DictionaryV", "String"]
-- ["15web_application10DictionaryV", "Update"]
-- ["15web_application10DictionaryV", ""]
-- ["15web_application10DictionaryV", "_commandName"]
-- ["15web_application10DictionaryV", "_errorLabel"]
-- ["15web_application10DictionaryV", "commandName"]
-- ["15web_application10DictionaryV", "configuration"]
-- ["15web_application10DictionaryV", "errorLabel"]
-- ["15web_application10DictionaryV", "init"]
-- !private ["15web_application10DictionaryV", "key"]
-- !private ["15web_application10DictionaryV", "language"]
-- !private ["15web_application10DictionaryV", "loadJson"]
-- ["15web_application10DictionaryV", "main"]
-- !private ["15web_application10DictionaryV", "outAll"]
-- !private ["15web_application10DictionaryV", "outLiterals"]
-- !private ["15web_application10DictionaryV", "outTranslation"]
-- !private ["15web_application10DictionaryV", "outTranslations"]
-- !private ["15web_application10DictionaryV", "print"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "CodingKeys"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "Option"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "String"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", ""]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "_commandName"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "_errorLabel"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "_key"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "_language"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "commandName"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "configuration"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "errorLabel"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "helpMessage"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "init"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "key"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "language"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "run"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV", "validate"]
+- !private ["SD", "isEmpty"]
 - !private ["SD", "removeValue"]
-- ["15web_application10DictionaryV", "run"]
 - !private ["SD", "subscript"]
 - !private ["SD", "updateValue"]
-- !private ["15web_application10DictionaryV", "uploadJSON"]
-- ["15web_application10DictionaryV", "validate"]
-- !private ["15web_application10DictionaryV", "word"]
-- ["14ArgumentParser17NameSpecificationV7ElementO", "long"]
-- ["14ArgumentParser17NameSpecificationV7ElementO", "short"]
 - !private ["SE", "blue"]
 - !private ["SE", "callAsFunction"]
 - !private ["SE", "cyan"]
+- !private ["SE", "delete"]
 - !private ["SE", "green"]
 - !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
 - !private ["SE", "lowercased"]
 - !private ["SE", "magenta"]
 - !private ["SE", "red"]
 - !private ["SE", "removeValue"]
+- !private ["SE", "search"]
 - !private ["SE", "subscript"]
+- !private ["SE", "update"]
 - !private ["SE", "updateValue"]
 - !private ["SE", "write"]
 - !private ["SE", "yellow"]
@@ -325,22 +386,24 @@ depends-member:
 - !private ["SQ", "callAsFunction"]
 - !private ["SQ", "cyan"]
 - ["SQ", "debugDescription"]
+- !private ["SQ", "delete"]
 - ["SQ", "description"]
 - !private ["SQ", "green"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
 - ["SQ", "init"]
 - ["SQ", "intValue"]
-- ["SQ", "long"]
+- !private ["SQ", "isEmpty"]
 - !private ["SQ", "lowercased"]
 - !private ["SQ", "magenta"]
 - !private ["SQ", "module"]
 - !private ["SQ", "prettyPrinted"]
 - !private ["SQ", "red"]
 - !private ["SQ", "removeValue"]
-- ["SQ", "short"]
+- !private ["SQ", "search"]
 - ["SQ", "stringValue"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "update"]
 - !private ["SQ", "updateValue"]
 - !private ["SQ", "url"]
 - !private ["SQ", "wrap"]
@@ -358,10 +421,12 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "prettyPrinted"]
 - ["s25ExpressibleByArrayLiteralP", "short"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "wrap"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isEmpty"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "removeValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "updateValue"]
@@ -377,23 +442,38 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "yellow"]
 - !private ["s23ExpressibleByNilLiteralP", "blue"]
 - !private ["s23ExpressibleByNilLiteralP", "cyan"]
+- !private ["s23ExpressibleByNilLiteralP", "delete"]
 - !private ["s23ExpressibleByNilLiteralP", "green"]
+- !private ["s23ExpressibleByNilLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "magenta"]
 - !private ["s23ExpressibleByNilLiteralP", "red"]
+- !private ["s23ExpressibleByNilLiteralP", "search"]
+- !private ["s23ExpressibleByNilLiteralP", "update"]
 - !private ["s23ExpressibleByNilLiteralP", "yellow"]
 - !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - !private ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "callAsFunction"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "lowercased"]
-- ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
 - !private ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "callAsFunction"]
-- ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "lowercased"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "callAsFunction"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
+- !private ["15web_application6FilterC", "Color"]
+- ["15web_application6FilterC", "String"]
+- !private ["15web_application6FilterC", ""]
+- ["15web_application6FilterC", "deinit"]
+- ["15web_application6FilterC", "filterData"]
+- ["15web_application6FilterC", "init"]
+- !private ["15web_application6FilterC", "print"]
+- !private ["15web_application18FilterDataProtocolP", "Color"]
+- ["15web_application18FilterDataProtocolP", "String"]
+- ["15web_application18FilterDataProtocolP", ""]
+- ["15web_application18FilterDataProtocolP", "filterData"]
+- !private ["15web_application18FilterDataProtocolP", "init"]
+- !private ["15web_application18FilterDataProtocolP", "print"]
 - !private ["s17FixedWidthIntegerP", "blue"]
 - !private ["s17FixedWidthIntegerP", "cyan"]
 - !private ["s17FixedWidthIntegerP", "green"]
@@ -407,21 +487,23 @@ depends-member:
 - !private ["SH", "callAsFunction"]
 - !private ["SH", "cyan"]
 - ["SH", "debugDescription"]
+- !private ["SH", "delete"]
 - ["SH", "description"]
 - !private ["SH", "green"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
 - ["SH", "init"]
 - ["SH", "intValue"]
-- ["SH", "long"]
+- !private ["SH", "isEmpty"]
 - !private ["SH", "lowercased"]
 - !private ["SH", "magenta"]
 - !private ["SH", "module"]
 - !private ["SH", "red"]
 - !private ["SH", "removeValue"]
-- ["SH", "short"]
+- !private ["SH", "search"]
 - ["SH", "stringValue"]
 - !private ["SH", "subscript"]
+- !private ["SH", "update"]
 - !private ["SH", "updateValue"]
 - !private ["SH", "url"]
 - !private ["SH", "write"]
@@ -447,9 +529,11 @@ depends-member:
 - !private ["s10MirrorPathP", "lowercased"]
 - !private ["SM", ""]
 - !private ["SM", "init"]
+- !private ["SM", "subscript"]
 - !private ["SM", "wrap"]
 - !private ["SM", "write"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "write"]
 - !private ["10Foundation8NSCodingP", ""]
 - !private ["10Foundation8NSCodingP", "lowercased"]
@@ -480,9 +564,12 @@ depends-member:
 - !private ["s9OptionSetP", "prettyPrinted"]
 - !private ["Sq", "blue"]
 - !private ["Sq", "cyan"]
+- !private ["Sq", "delete"]
 - !private ["Sq", "green"]
 - !private ["Sq", "magenta"]
 - !private ["Sq", "red"]
+- !private ["Sq", "search"]
+- !private ["Sq", "update"]
 - !private ["Sq", "yellow"]
 - !private ["10Foundation11JSONEncoderC16OutputFormattingV", "prettyPrinted"]
 - ["14ArgumentParser17ParsableArgumentsP", "Argument"]
@@ -501,18 +588,12 @@ depends-member:
 - ["14ArgumentParser17ParsableArgumentsP", "commandName"]
 - ["14ArgumentParser17ParsableArgumentsP", "configuration"]
 - ["14ArgumentParser17ParsableArgumentsP", "errorLabel"]
+- !private ["14ArgumentParser17ParsableArgumentsP", "helpMessage"]
 - ["14ArgumentParser17ParsableArgumentsP", "init"]
 - !private ["14ArgumentParser17ParsableArgumentsP", "key"]
 - !private ["14ArgumentParser17ParsableArgumentsP", "language"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "loadJson"]
-- ["14ArgumentParser17ParsableArgumentsP", "main"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "outAll"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "outLiterals"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "outTranslation"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "outTranslations"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "print"]
+- !private ["14ArgumentParser17ParsableArgumentsP", "parseAsRoot"]
 - ["14ArgumentParser17ParsableArgumentsP", "run"]
-- !private ["14ArgumentParser17ParsableArgumentsP", "uploadJSON"]
 - ["14ArgumentParser17ParsableArgumentsP", "validate"]
 - !private ["14ArgumentParser17ParsableArgumentsP", "word"]
 - ["14ArgumentParser15ParsableCommandP", "Argument"]
@@ -531,18 +612,12 @@ depends-member:
 - ["14ArgumentParser15ParsableCommandP", "commandName"]
 - ["14ArgumentParser15ParsableCommandP", "configuration"]
 - ["14ArgumentParser15ParsableCommandP", "errorLabel"]
+- !private ["14ArgumentParser15ParsableCommandP", "helpMessage"]
 - ["14ArgumentParser15ParsableCommandP", "init"]
 - !private ["14ArgumentParser15ParsableCommandP", "key"]
 - !private ["14ArgumentParser15ParsableCommandP", "language"]
-- !private ["14ArgumentParser15ParsableCommandP", "loadJson"]
-- ["14ArgumentParser15ParsableCommandP", "main"]
-- !private ["14ArgumentParser15ParsableCommandP", "outAll"]
-- !private ["14ArgumentParser15ParsableCommandP", "outLiterals"]
-- !private ["14ArgumentParser15ParsableCommandP", "outTranslation"]
-- !private ["14ArgumentParser15ParsableCommandP", "outTranslations"]
-- !private ["14ArgumentParser15ParsableCommandP", "print"]
+- !private ["14ArgumentParser15ParsableCommandP", "parseAsRoot"]
 - ["14ArgumentParser15ParsableCommandP", "run"]
-- !private ["14ArgumentParser15ParsableCommandP", "uploadJSON"]
 - ["14ArgumentParser15ParsableCommandP", "validate"]
 - !private ["14ArgumentParser15ParsableCommandP", "word"]
 - ["14ArgumentParser13ParsedWrapperP", ""]
@@ -550,6 +625,7 @@ depends-member:
 - ["14ArgumentParser13ParsedWrapperP", "wrappedValue"]
 - !private ["Sk", ""]
 - !private ["Sk", "init"]
+- !private ["Sk", "subscript"]
 - !private ["Sk", "write"]
 - !private ["Sm", ""]
 - !private ["Sm", "_customRemoveLast"]
@@ -583,29 +659,23 @@ depends-member:
 - !private ["s10SIMDScalarP", "magenta"]
 - !private ["s10SIMDScalarP", "red"]
 - !private ["s10SIMDScalarP", "yellow"]
-- ["15web_application10DictionaryV6SearchV", "CodingKeys"]
-- ["15web_application10DictionaryV6SearchV", "CommandConfiguration"]
-- ["15web_application10DictionaryV6SearchV", "Option"]
-- ["15web_application10DictionaryV6SearchV", "String"]
-- ["15web_application10DictionaryV6SearchV", ""]
-- ["15web_application10DictionaryV6SearchV", "_commandName"]
-- ["15web_application10DictionaryV6SearchV", "_errorLabel"]
-- !private ["15web_application10DictionaryV6SearchV", "_key"]
-- !private ["15web_application10DictionaryV6SearchV", "_language"]
-- ["15web_application10DictionaryV6SearchV", "commandName"]
-- ["15web_application10DictionaryV6SearchV", "configuration"]
-- ["15web_application10DictionaryV6SearchV", "errorLabel"]
-- ["15web_application10DictionaryV6SearchV", "init"]
-- ["15web_application10DictionaryV6SearchV", "key"]
-- ["15web_application10DictionaryV6SearchV", "language"]
-- !private ["15web_application10DictionaryV6SearchV", "loadJson"]
-- !private ["15web_application10DictionaryV6SearchV", "outAll"]
-- !private ["15web_application10DictionaryV6SearchV", "outLiterals"]
-- !private ["15web_application10DictionaryV6SearchV", "outTranslation"]
-- !private ["15web_application10DictionaryV6SearchV", "outTranslations"]
-- !private ["15web_application10DictionaryV6SearchV", "print"]
-- ["15web_application10DictionaryV6SearchV", "run"]
-- ["15web_application10DictionaryV6SearchV", "validate"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "CodingKeys"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "Option"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "String"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", ""]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "_commandName"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "_errorLabel"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "_key"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "_language"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "commandName"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "configuration"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "errorLabel"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "helpMessage"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "init"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "key"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "language"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "run"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV", "validate"]
 - !private ["12PrettyColors30SelectGraphicRenditionWrapTypeP", "init"]
 - !private ["12PrettyColors30SelectGraphicRenditionWrapTypeP", "wrap"]
 - !private ["ST", "Element"]
@@ -613,6 +683,7 @@ depends-member:
 - !private ["ST", ""]
 - !private ["ST", "callAsFunction"]
 - !private ["ST", "init"]
+- !private ["ST", "isEmpty"]
 - !private ["ST", "lowercased"]
 - !private ["ST", "makeIterator"]
 - !private ["ST", "removeValue"]
@@ -656,33 +727,32 @@ depends-member:
 - !private ["SU", "magenta"]
 - !private ["SU", "red"]
 - !private ["SU", "yellow"]
-- ["15web_application10DictionaryV6UpdateV", "Argument"]
-- ["15web_application10DictionaryV6UpdateV", "CodingKeys"]
-- ["15web_application10DictionaryV6UpdateV", "CommandConfiguration"]
-- ["15web_application10DictionaryV6UpdateV", "Option"]
-- ["15web_application10DictionaryV6UpdateV", "String"]
-- ["15web_application10DictionaryV6UpdateV", ""]
-- ["15web_application10DictionaryV6UpdateV", "_commandName"]
-- ["15web_application10DictionaryV6UpdateV", "_errorLabel"]
-- !private ["15web_application10DictionaryV6UpdateV", "_key"]
-- !private ["15web_application10DictionaryV6UpdateV", "_language"]
-- !private ["15web_application10DictionaryV6UpdateV", "_word"]
-- ["15web_application10DictionaryV6UpdateV", "commandName"]
-- ["15web_application10DictionaryV6UpdateV", "configuration"]
-- ["15web_application10DictionaryV6UpdateV", "errorLabel"]
-- ["15web_application10DictionaryV6UpdateV", "init"]
-- ["15web_application10DictionaryV6UpdateV", "key"]
-- ["15web_application10DictionaryV6UpdateV", "language"]
-- !private ["15web_application10DictionaryV6UpdateV", "loadJson"]
-- !private ["15web_application10DictionaryV6UpdateV", "print"]
-- ["15web_application10DictionaryV6UpdateV", "run"]
-- !private ["15web_application10DictionaryV6UpdateV", "uploadJSON"]
-- ["15web_application10DictionaryV6UpdateV", "validate"]
-- ["15web_application10DictionaryV6UpdateV", "word"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "Argument"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "CodingKeys"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "Option"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "String"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", ""]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "_commandName"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "_errorLabel"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "_key"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "_language"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "_word"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "commandName"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "configuration"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "errorLabel"]
+- !private ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "helpMessage"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "init"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "key"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "language"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "run"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "validate"]
+- ["15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV", "word"]
 - !private ["12PrettyColors5ColorV4WrapV", "init"]
 - !private ["12PrettyColors5ColorV4WrapV", "wrap"]
+- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["10Foundation13_CFBridgeableP", "callAsFunction"]
 - !private ["10Foundation13_CFBridgeableP", "init"]
+- !private ["10Foundation13_CFBridgeableP", "isEmpty"]
 - !private ["10Foundation13_CFBridgeableP", "lowercased"]
 - !private ["10Foundation13_CFBridgeableP", "removeValue"]
 - !private ["10Foundation13_CFBridgeableP", "subscript"]
@@ -696,6 +766,7 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "magenta"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "red"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "yellow"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "callAsFunction"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
@@ -714,9 +785,11 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
 - !private ["s19_HasContiguousBytesP", "callAsFunction"]
 - !private ["s19_HasContiguousBytesP", "lowercased"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "blue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "cyan"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "green"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "magenta"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "red"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "removeValue"]
@@ -725,6 +798,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "yellow"]
 - !private ["10Foundation13_NSBridgeableP", "callAsFunction"]
 - !private ["10Foundation13_NSBridgeableP", "init"]
+- !private ["10Foundation13_NSBridgeableP", "isEmpty"]
 - !private ["10Foundation13_NSBridgeableP", "lowercased"]
 - !private ["10Foundation13_NSBridgeableP", "removeValue"]
 - !private ["10Foundation13_NSBridgeableP", "subscript"]
@@ -740,6 +814,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "cyan"]
 - !private ["s21_ObjectiveCBridgeableP", "green"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "lowercased"]
 - !private ["s21_ObjectiveCBridgeableP", "magenta"]
 - !private ["s21_ObjectiveCBridgeableP", "red"]
@@ -760,15 +835,22 @@ depends-member:
 - !private ["10Foundation16_SwiftBridgeableP", "lowercased"]
 - !private ["s12_UnwrappableP", "blue"]
 - !private ["s12_UnwrappableP", "cyan"]
+- !private ["s12_UnwrappableP", "delete"]
 - !private ["s12_UnwrappableP", "green"]
 - !private ["s12_UnwrappableP", "magenta"]
 - !private ["s12_UnwrappableP", "red"]
+- !private ["s12_UnwrappableP", "search"]
+- !private ["s12_UnwrappableP", "update"]
 - !private ["s12_UnwrappableP", "yellow"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - "14ArgumentParser0A0V"
 - !private "14ArgumentParser0A18HelpOptionProviderP"
 - "14ArgumentParser0A11SetProviderP"
+- "15web_application9ArgumentsO"
+- "15web_application15ArgumentsParserC"
+- "15web_application23ArgumentsParserProtocolP"
+- !private "Sa"
 - !private "SK"
 - !private "Sz"
 - !private "10Foundation6BundleC"
@@ -778,24 +860,23 @@ depends-nominal:
 - !private "12PrettyColors5ColorV"
 - !private "12PrettyColors5ColorV5NamedVABO"
 - "14ArgumentParser20CommandConfigurationV"
+- !private "s11CommandLineO"
 - !private "SL"
+- "15web_application9ContainerC"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation4DataV"
+- "15web_application8DataBaseC"
+- "15web_application16DataBaseProtocolP"
 - !private "10Foundation12DataProtocolP"
 - "Se"
 - "14ArgumentParser22DecodableParsedWrapperP"
 - !private "s7DecoderP"
 - !private "s26DefaultStringInterpolationV"
-- "15web_application10DictionaryV6DeleteV"
-- "15web_application10DictionaryV"
+- "15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6DeleteV"
 - !private "SD"
-- "15web_application10DictionaryV"
-- !private "SD"
-- "15web_application10DictionaryV"
-- "14ArgumentParser17NameSpecificationV7ElementO"
 - !private "SE"
 - "SQ"
 - !private "14ArgumentParser013ExpressibleByA0P"
@@ -805,8 +886,10 @@ depends-nominal:
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
-- "s26ExpressibleByStringLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "15web_application6FilterC"
+- "15web_application18FilterDataProtocolP"
 - !private "s17FixedWidthIntegerP"
 - "SH"
 - !private "s6HasherV"
@@ -839,7 +922,7 @@ depends-nominal:
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s10SIMDScalarP"
-- "15web_application10DictionaryV6SearchV"
+- "15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6SearchV"
 - !private "12PrettyColors30SelectGraphicRenditionWrapTypeP"
 - !private "ST"
 - !private "s10SetAlgebraP"
@@ -851,10 +934,12 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - !private "s5UInt8V"
 - !private "SU"
-- "15web_application10DictionaryV6UpdateV"
+- "15web_application8Commands016_D89267D2F5AEF63F15D090FF0A1FBC746LLV6UpdateV"
 - !private "12PrettyColors5ColorV4WrapV"
+- !private "s14_ArrayProtocolP"
 - !private "10Foundation13_CFBridgeableP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -878,4 +963,4 @@ depends-external:
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
-interface-hash: "962880f9f0db36ec5f19a657251dffc3"
+interface-hash: "13b1be1a12856fb95ba44e2aabc5f12c"
