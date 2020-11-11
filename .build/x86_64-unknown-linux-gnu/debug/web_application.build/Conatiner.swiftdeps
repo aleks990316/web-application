@@ -1,0 +1,76 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Container"
+provides-nominal:
+- "15web_application9ContainerC"
+provides-member:
+- ["15web_application9ContainerC", ""]
+depends-top-level:
+- !private "ArgumentsParser"
+- "ArgumentsParserProtocol"
+- "Container"
+- !private "DataBase"
+- "DataBaseProtocol"
+- !private "FilterData"
+- "FilterDataProtocol"
+depends-member:
+- !private ["15web_application15ArgumentsParserC", ""]
+- !private ["15web_application15ArgumentsParserC", "init"]
+- !private ["15web_application23ArgumentsParserProtocolP", "init"]
+- !private ["s9CodingKeyP", ""]
+- !private ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "intValue"]
+- !private ["s9CodingKeyP", "stringValue"]
+- !private ["15web_application9ContainerC", "ArgumentsParser"]
+- ["15web_application9ContainerC", "ArgumentsParserProtocol"]
+- !private ["15web_application9ContainerC", "DataBase"]
+- ["15web_application9ContainerC", "DataBaseProtocol"]
+- !private ["15web_application9ContainerC", "FilterData"]
+- ["15web_application9ContainerC", "FilterDataProtocol"]
+- ["15web_application9ContainerC", "argumentsParser"]
+- ["15web_application9ContainerC", "dataBase"]
+- ["15web_application9ContainerC", "deinit"]
+- ["15web_application9ContainerC", "filter"]
+- ["15web_application9ContainerC", "init"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["15web_application8DataBaseC", "CodingKeys"]
+- !private ["15web_application8DataBaseC", ""]
+- !private ["15web_application8DataBaseC", "init"]
+- !private ["15web_application16DataBaseProtocolP", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "=="]
+- !private ["SQ", ""]
+- !private ["15web_application10FilterDataC", ""]
+- !private ["15web_application10FilterDataC", "init"]
+- !private ["15web_application18FilterDataProtocolP", "init"]
+- !private ["SH", ""]
+- !private ["SH", "hash"]
+- !private ["SH", "hashValue"]
+depends-nominal:
+- !private "15web_application15ArgumentsParserC"
+- !private "15web_application23ArgumentsParserProtocolP"
+- !private "s9CodingKeyP"
+- "15web_application9ContainerC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "15web_application8DataBaseC"
+- !private "15web_application16DataBaseProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "15web_application10FilterDataC"
+- !private "15web_application18FilterDataProtocolP"
+- !private "SH"
+depends-dynamic-lookup:
+depends-external:
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/PrettyColors.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "eefdd61df26bfbb50d7bcb3dcbd15998"

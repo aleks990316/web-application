@@ -2,6 +2,36 @@
   "": {
     "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/master.swiftdeps"
   },
+  "/home/aleksandr/Документы/GitHub/web-application/Sources/web-application/Arguments.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Arguments.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Arguments.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Arguments~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Arguments.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/Sources/web-application/ArgumentsParser.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/ArgumentsParser.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/ArgumentsParser.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/ArgumentsParser~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/ArgumentsParser.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/Sources/web-application/Conatiner.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Conatiner.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Conatiner.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Conatiner~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/Conatiner.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/Sources/web-application/DataBase.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/DataBase.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/DataBase.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/DataBase~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/DataBase.swiftdeps"
+  },
+  "/home/aleksandr/Документы/GitHub/web-application/Sources/web-application/FilterData.swift": {
+    "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/FilterData.d",
+    "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/FilterData.swift.o",
+    "swiftmodule": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/FilterData~partial.swiftmodule",
+    "swift-dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/FilterData.swiftdeps"
+  },
   "/home/aleksandr/Документы/GitHub/web-application/Sources/web-application/main.swift": {
     "dependencies": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/main.d",
     "object": "/home/aleksandr/Документы/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/main.swift.o",
