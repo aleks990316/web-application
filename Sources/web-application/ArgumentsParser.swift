@@ -18,25 +18,26 @@ class ArgumentsParser: ArgumentsParserProtocol {
           return .delete(key: command.key, language: command.language)
         default:    
           if arguments[1] == "search" {
-            print(Commands.Search.helpMessage())
+            return .help(message: Commands.Search.helpMessage())
           } else if arguments[1] == "update" {
-            print(Commands.Update.helpMessage())
+            return .help(message: Commands.Update.helpMessage())
           } else if arguments[1] == "delete" {
-            print(Commands.Delete.helpMessage())
+            return .help(message: Commands.Delete.helpMessage())
           }
-          return nil
+          //search -  команда по умолчанию
+          return .help(message: Commands.Search.helpMessage())
       }
     }
     catch {
-      print(Commands.helpMessage())
-      return nil
+      return Arguments.help(message: Commands.helpMessage())
     }
   }
 }
 
 private struct Commands: ParsableCommand {
   static var configuration = CommandConfiguration(
-    subcommands: [Search.self, Update.self, Delete.self]
+    subcommands: [Search.self, Update.self, Delete.self],
+    defaultSubcommand: Search.self
   )
 }
 

@@ -6,22 +6,27 @@ func main() {
     return
   }
 
-  let dataBase = container.dataBase
-
   switch arguments {
     case .search(key: let key, language: let language):
-      guard let data = dataBase.getData() else {
-        return
-      }
-      let filter = container.filter
-      filter.filterData(data, key, language)
+      let argumentsFilter = container.filterOfArguments
+      let keys = argumentsFilter.filter(key, language)
+      let dataFilter = container.filterData
+      let filteredData = dataFilter.filter(keys)
+      let printer = container.printer
+      printer.printing(filteredData)
     case .update(word: let word, key: let key, language: let language):
-      dataBase.updateData(word, key, language)
+      let dataBase = container.dataBase
+      dataBase.updateData(word, key.lowercased(), language.lowercased())
     case .delete(key: let key, language: let language):
-      dataBase.deleteData(key, language)
+      let argumentsFilter = container.filterOfArguments
+      let keys = argumentsFilter.filter(key, language)
+      let dataBase = container.dataBase
+      dataBase.deleteData(keys)
+    case .help(message: let message):
+      let printer = container.printer
+      printer.printing(message)
+      
   }
-  
-  
 }
 
 main()

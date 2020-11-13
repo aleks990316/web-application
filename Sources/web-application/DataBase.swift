@@ -4,68 +4,82 @@ import Foundation
 protocol DataBaseProtocol {
   func getData() -> [String: [String: String]]?
   func updateData(_ word: String, _ key: String, _ language: String)
-  func deleteData(_ key: String?, _ language: String?)
-
+  func deleteData(_ arguments: ArgumentsType)
 }
 
-class DataBase: DataBaseProtocol, Codable {
+class DataBase: DataBaseProtocol{
 
-  private var words: [String: [String: String]]? = DataBase.loadJson(filename: "data")
+  private var data: [String: [String: String]]?
 
-  func getData() -> [String: [String: String]]?{
-    return words
+  func getData() -> [String: [String: String]]? {
+    return data
   }
+  
   func updateData(_ word: String, _ key: String, _ language: String){
-    if words?[key] == nil { 
-      words?.updateValue([language: word], forKey: key)
+    if data?[key] == nil { 
+      data?.updateValue([language: word], forKey: key)
     } else {
-      words?[key]?.updateValue(word, forKey: language)
+      data?[key]?.updateValue(word, forKey: language)
     }
     uploadJSON(fileName: "data")
   }
 
-  func deleteData(_ key: String?, _ language: String?) {
-    if let key = key{
-      guard var word = words?[key] else {
+  private func deleteByKeyAndLanguage(_ key: String, _ language: String) {
+    guard var word = data?[key] else {
         print(Color.Wrap(foreground: .red).wrap("No data found"))
         return
-      }
-      if let language = language {
-        guard let _ = word[language] else {
-          print(Color.Wrap(foreground: .red).wrap("No data found"))
-          return
-        }
-        word.removeValue(forKey: language)
-      } else {
-        word = [:]
-      }
-      words?[key] = word
-      if words?[key] == [:] {
-        words?.removeValue(forKey: key)
-      } 
-    } else if let language = language {
-      guard var data = words else {
+    }
+    guard let _ = word[language] else {
+        print(Color.Wrap(foreground: .red).wrap("No data found"))
         return
-      }
-      for (word, var translations) in data {
-        translations.removeValue(forKey: language)
-        data[word] = translations 
-        if data[word] == [:] {
-          data.removeValue(forKey: word)
+    }
+    word.removeValue(forKey: language)
+    if word.isEmpty{
+      data?.removeValue(forKey: key)
+    }
+  }
+
+  private func deleteByLanguage(_ language: String) {
+    if var copyOfData = data {
+      for (word, var translations) in copyOfData {
+        if let _ = translations[language] {
+          translations.removeValue(forKey: language)
+          if translations == [:] {
+            copyOfData.removeValue(forKey: word)
+          } else {
+            copyOfData[word] = translations
+          }
         }
       }
-      if data == words {
+      if data == copyOfData {
         print(Color.Wrap(foreground: .red).wrap("No data found"))
       } else {
-        words = data
+        data = copyOfData
       }
-    } else {
+    }
+  }
+
+  func deleteByKey(_ key: String) { 
+    if data?.removeValue(forKey: key) == nil {
       print(Color.Wrap(foreground: .red).wrap("No data found"))
+    } 
+  }
+
+  func deleteData(_ arguments: ArgumentsType) {
+    switch arguments {
+      case .keyAndLanguage(valueOfKey: let key, valueOfLanguage: let language):
+        deleteByKeyAndLanguage(key, language)
+      case .language(value: let language):
+        deleteByLanguage(language)
+      case .key(value: let key):
+        deleteByKey(key)
+      case .nothing:
+        print(Color.Wrap(foreground: .red).wrap("No data found"))
     }
     uploadJSON(fileName: "data")
   }
 
-  class private func loadJson(filename fileName: String) ->  [String: [String: String]]? {
+  private func loadJson(filename fileName: String) ->  [String: [String: String]]? {
     if let url = Bundle.module.url(forResource: fileName, withExtension: "json") {
       do {
         let data = try Data(contentsOf: url)
@@ -84,11 +98,15 @@ class DataBase: DataBaseProtocol, Codable {
       do {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
-        let json = try encoder.encode(self.words)
+        let json = try encoder.encode(self.data)
         try json.write(to: url)
       } catch {
         print("error: \(error)")
       }
     }
+  }
+
+  init () {
+    data = loadJson(filename: "data")
   }
 }

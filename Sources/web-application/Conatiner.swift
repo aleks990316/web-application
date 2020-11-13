@@ -5,7 +5,14 @@ class Container {
   var dataBase: DataBaseProtocol {
     return DataBase()
   }
-  var filter: FilterDataProtocol{
-    return FilterData()
+  var filterData: FilterDataProtocol{
+    return FilterData(dataBase: dataBase)
+  }
+  var filterOfArguments: ArgumentsFilterProtocol {
+    return ArgumentsFilter()
+  }
+
+  var printer: PrinterProtocol {
+    return Printer()
   }
 }
