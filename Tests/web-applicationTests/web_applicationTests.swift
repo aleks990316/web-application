@@ -6,7 +6,10 @@ final class web_applicationTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fb0d50... commit
         // Some of the APIs that we use below are available in macOS 10.13 and above.
         guard #available(macOS 10.13, *) else {
             return
@@ -44,4 +47,8 @@ final class web_applicationTests: XCTestCase {
     static var allTests = [
         ("testExample", testExample),
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5fb0d50... commit

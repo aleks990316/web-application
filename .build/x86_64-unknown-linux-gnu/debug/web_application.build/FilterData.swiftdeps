@@ -1,0 +1,111 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FilterDataProtocol"
+- "FilterData"
+provides-nominal:
+- "15web_application18FilterDataProtocolP"
+- "15web_application10FilterDataC"
+provides-member:
+- ["15web_application18FilterDataProtocolP", ""]
+- ["15web_application10FilterDataC", ""]
+depends-top-level:
+- !private "+"
+- !private "+="
+- "ArgumentsType"
+- "AssignmentPrecedence"
+- "DataBaseProtocol"
+- "FilterData"
+- "FilterDataProtocol"
+- "String"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "data"
+- !private "dataBase"
+- !private "filterByKey"
+- !private "filterByKeyAndLanguage"
+- !private "filterByLanguage"
+- !private "getAll"
+- !private "result"
+depends-member:
+- ["15web_application13ArgumentsTypeO", "key"]
+- ["15web_application13ArgumentsTypeO", "keyAndLanguage"]
+- ["15web_application13ArgumentsTypeO", "language"]
+- ["15web_application13ArgumentsTypeO", "nothing"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["15web_application16DataBaseProtocolP", "getData"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "subscript"]
+- !private ["SQ", ""]
+- !private ["SQ", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["15web_application10FilterDataC", "ArgumentsType"]
+- ["15web_application10FilterDataC", "DataBaseProtocol"]
+- ["15web_application10FilterDataC", "String"]
+- !private ["15web_application10FilterDataC", "data"]
+- !private ["15web_application10FilterDataC", "dataBase"]
+- ["15web_application10FilterDataC", "deinit"]
+- ["15web_application10FilterDataC", "filter"]
+- !private ["15web_application10FilterDataC", "filterByKey"]
+- !private ["15web_application10FilterDataC", "filterByKeyAndLanguage"]
+- !private ["15web_application10FilterDataC", "filterByLanguage"]
+- !private ["15web_application10FilterDataC", "getAll"]
+- ["15web_application10FilterDataC", "init"]
+- !private ["15web_application10FilterDataC", "result"]
+- ["15web_application18FilterDataProtocolP", "ArgumentsType"]
+- ["15web_application18FilterDataProtocolP", "String"]
+- ["15web_application18FilterDataProtocolP", ""]
+- !private ["15web_application18FilterDataProtocolP", "data"]
+- !private ["15web_application18FilterDataProtocolP", "dataBase"]
+- ["15web_application18FilterDataProtocolP", "filter"]
+- !private ["15web_application18FilterDataProtocolP", "filterByKey"]
+- !private ["15web_application18FilterDataProtocolP", "filterByKeyAndLanguage"]
+- !private ["15web_application18FilterDataProtocolP", "filterByLanguage"]
+- !private ["15web_application18FilterDataProtocolP", "getAll"]
+- !private ["15web_application18FilterDataProtocolP", "result"]
+- !private ["SH", "subscript"]
+- !private ["ST", "Element"]
+- !private ["ST", "Iterator"]
+- !private ["ST", ""]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "subscript"]
+- !private ["10Foundation13_CFBridgeableP", "subscript"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation13_NSBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "15web_application13ArgumentsTypeO"
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "15web_application16DataBaseProtocolP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "15web_application10FilterDataC"
+- "15web_application18FilterDataProtocolP"
+- !private "SH"
+- !private "ST"
+- !private "10Foundation13_CFBridgeableP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation13_NSBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/PrettyColors.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "ab6b82904ad750dd4c377fecf27b456f"

@@ -1,0 +1,29 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ArgumentsType"
+provides-nominal:
+- "15web_application13ArgumentsTypeO"
+provides-member:
+- ["15web_application13ArgumentsTypeO", ""]
+depends-top-level:
+- "ArgumentsType"
+- "String"
+depends-member:
+- ["15web_application13ArgumentsTypeO", "String"]
+- ["15web_application13ArgumentsTypeO", "key"]
+- ["15web_application13ArgumentsTypeO", "keyAndLanguage"]
+- ["15web_application13ArgumentsTypeO", "language"]
+- ["15web_application13ArgumentsTypeO", "nothing"]
+depends-nominal:
+- "15web_application13ArgumentsTypeO"
+depends-dynamic-lookup:
+depends-external:
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/PrettyColors.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "46c8df831f832b54b968a76f18748af3"
