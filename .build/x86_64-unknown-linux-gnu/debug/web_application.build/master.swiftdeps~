@@ -1,6 +1,0 @@
-version: "Swift version 5.3 (swift-5.3-RELEASE)"
-options: "81e98d9de8d961fe1194bcb3625b65c1"
-build_time: [1605098644, 311882038]
-inputs:
-  "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/Sources/web-application/main.swift": [1605098641, 523234567]
-  "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/web_application.build/DerivedSources/resource_bundle_accessor.swift": [1604498073, 798294494]
