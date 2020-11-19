@@ -8,7 +8,6 @@ let package = Package(
     defaultLocalization: "en",
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
-        .package(url: "https://github.com/jdhealy/PrettyColors.git", from: "5.0.2")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -19,7 +18,6 @@ let package = Package(
             name: "web-application",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
-                "PrettyColors"
             ],
             resources: [.process("Resources")]
         ),

@@ -1,10 +1,9 @@
-import PrettyColors
 import Foundation
 
 protocol DataBaseProtocol {
   func getData() -> [String: [String: String]]?
-  func updateData(_ word: String, _ key: String, _ language: String)
-  func deleteData(_ arguments: ArgumentsType)
+  func updateData(_ word: String, _ key: String, _ language: String) -> Int32
+  func deleteData(_ arguments: ArgumentsType) -> Int32
 }
 
 class DataBase: DataBaseProtocol{
@@ -15,31 +14,34 @@ class DataBase: DataBaseProtocol{
     return data
   }
   
-  func updateData(_ word: String, _ key: String, _ language: String){
+  func updateData(_ word: String, _ key: String, _ language: String) -> Int32{
     if data?[key] == nil { 
       data?.updateValue([language: word], forKey: key)
     } else {
       data?[key]?.updateValue(word, forKey: language)
     }
     uploadJSON(fileName: "data")
+    return 2
   }
 
-  private func deleteByKeyAndLanguage(_ key: String, _ language: String) {
+  private func deleteByKeyAndLanguage(_ key: String, _ language: String) -> Int32 {
     guard var word = data?[key] else {
-        print(Color.Wrap(foreground: .red).wrap("No data found"))
-        return
+        print("No data found")
+        return 3
     }
     guard let _ = word[language] else {
-        print(Color.Wrap(foreground: .red).wrap("No data found"))
-        return
+        print("No data found")
+        return 3
     }
     word.removeValue(forKey: language)
     if word.isEmpty{
       data?.removeValue(forKey: key)
     }
+    return 4
   }
 
-  private func deleteByLanguage(_ language: String) {
+  private func deleteByLanguage(_ language: String) -> Int32 {
+    var result: Int32 = -1
     if var copyOfData = data {
       for (word, var translations) in copyOfData {
         if let _ = translations[language] {
@@ -52,31 +54,39 @@ class DataBase: DataBaseProtocol{
         }
       }
       if data == copyOfData {
-        print(Color.Wrap(foreground: .red).wrap("No data found"))
+        print("No data found")
+        result = 3
       } else {
         data = copyOfData
+        result = 5
       }
     }
+    return result
   }
 
-  func deleteByKey(_ key: String) { 
+  func deleteByKey(_ key: String) -> Int32 { 
     if data?.removeValue(forKey: key) == nil {
-      print(Color.Wrap(foreground: .red).wrap("No data found"))
+      print("No data found")
+      return 3
     } 
+    return 6
   }
 
-  func deleteData(_ arguments: ArgumentsType) {
+  func deleteData(_ arguments: ArgumentsType) -> Int32{
+    let result: Int32
     switch arguments {
       case .keyAndLanguage(valueOfKey: let key, valueOfLanguage: let language):
-        deleteByKeyAndLanguage(key, language)
+        result = deleteByKeyAndLanguage(key, language)
       case .language(value: let language):
-        deleteByLanguage(language)
+        result = deleteByLanguage(language)
       case .key(value: let key):
-        deleteByKey(key)
+        result = deleteByKey(key)
       case .nothing:
-        print(Color.Wrap(foreground: .red).wrap("No data found"))
+        print("No data found")
+        result = 3
     }
     uploadJSON(fileName: "data")
+    return result
   }
 
   private func loadJson(filename fileName: String) ->  [String: [String: String]]? {

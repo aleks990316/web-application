@@ -1,15 +1,15 @@
-import PrettyColors
-
 protocol PrinterProtocol {
-    func printing(_ string: String)
+    func printing(_ string: String) -> Int32
 }
 
 class Printer: PrinterProtocol {
-    func printing(_ string: String) {
+    func printing(_ string: String) -> Int32 {
         if string != "" {
-            print(Color.Wrap(foreground: .blue).wrap(string))
+            print(string)
+            return 0
         } else {
-            print(Color.Wrap(foreground: .red).wrap("No data found"))
+            print("No data found")
+            return 1
         }
     }
 }
