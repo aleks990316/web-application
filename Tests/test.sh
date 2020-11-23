@@ -22,133 +22,133 @@ numberOfTests=0
 numberOfSuccessfulTests=0
 numberOfFailedTests=0
 
-./.build/debug/web-application search
+./.build/debug/Run search
 code=$?
 rightCode=0
 runTest $code $rightCode "Удачный поиск без ключей"
 
-./.build/debug/web-application search -k day
+./.build/debug/Run search -k day
 code=$?
 rightCode=0
 runTest $code $rightCode "Удачный поиск с ключом k"
 
-./.build/debug/web-application search -k chicken
+./.build/debug/Run search -k chicken
 code=$?
 rightCode=1
 runTest $code $rightCode "Неудачный поиск с ключом k"
 
-./.build/debug/web-application search -l en
+./.build/debug/Run search -l en
 code=$?
 rightCode=0
 runTest $code $rightCode "Удачный поиск с ключом l"
 
-./.build/debug/web-application search -l it
+./.build/debug/Run search -l it
 code=$?
 rightCode=1
 runTest $code $rightCode "Неудачный поиск с ключом l"
 
-./.build/debug/web-application update Dog -k dog -l en
+./.build/debug/Run update Dog -k dog -l en
 code=$?
 rightCode=2
 runTest $code $rightCode "Удачное обновление словаря"
 
-./.build/debug/web-application update Hola -k hello -l es
+./.build/debug/Run update Hola -k hello -l es
 code=$?
 rightCode=2
 runTest $code $rightCode "Удачное обновление словаря"
 
-./.build/debug/web-application update Пока -k bye -l ru
+./.build/debug/Run update Пока -k bye -l ru
 code=$?
 rightCode=2
 runTest $code $rightCode "Удачное обновление словаря"
 
 
-./.build/debug/web-application delete
+./.build/debug/Run delete
 code=$?
 rightCode=3
 runTest $code $rightCode "Неудачное удаление из словаря"
 
-./.build/debug/web-application delete -k dog
+./.build/debug/Run delete -k dog
 code=$?
 rightCode=6
 runTest $code $rightCode "Удачное удаление из словаря по ключу -k"
  
-./.build/debug/web-application delete -l es
+./.build/debug/Run delete -l es
 code=$?
 rightCode=5
 runTest $code $rightCode "Удачное удаление из словаря"
 
-./.build/debug/web-application delete -k bye -l ru
+./.build/debug/Run delete -k bye -l ru
 code=$?
 rightCode=4
 runTest $code $rightCode "Удачное удаление из словаря"
 
-./.build/debug/web-application -h
+./.build/debug/Run -h
 code=$?
 rightCode=7
 runTest $code $rightCode "Удачное получение помощи"
 
-./.build/debug/web-application delete -h
+./.build/debug/Run delete -h
 code=$?
 rightCode=7
 runTest $code $rightCode "Удачное получение помощи"
 
-./.build/debug/web-application search -h
+./.build/debug/Run search -h
 code=$?
 rightCode=7
 runTest $code $rightCode "Удачное получение помощи"
 
-./.build/debug/web-application update -h
+./.build/debug/Run update -h
 code=$?
 rightCode=7
 runTest $code $rightCode "Удачное получение помощи"
 
-./.build/debug/web-application search sdfsd
+./.build/debug/Run search sdfsd
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при невалидных аргументах поиска"
 
-./.build/debug/web-application esfsf update
+./.build/debug/Run esfsf update
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при невалидной субкоманде, даже если верная команда указана после"
 
-./.build/debug/web-application sdfsd
+./.build/debug/Run sdfsd
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при невалидной субкоманде"
 
-./.build/debug/web-application update -k hello
+./.build/debug/Run update -k hello
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при недостатке аргументов"
 
-./.build/debug/web-application update -l ru
+./.build/debug/Run update -l ru
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при недостатке аргументов"
 
-./.build/debug/web-application search -k hello -l
+./.build/debug/Run search -k hello -l
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи, если значение ключа не указано"
 
-./.build/debug/web-application -h lkasdj
+./.build/debug/Run -h lkasdj
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при неправильном использовании помощи)))))))))))))))))))"
 
-./.build/debug/web-application asdasd -h
+./.build/debug/Run asdasd -h
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при неправильном использовании помощи"
 
-./.build/debug/web-application search -m
+./.build/debug/Run search -m
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи при указании неверных ключей"
 
-./.build/debug/web-application update
+./.build/debug/Run update
 code=$?
 rightCode=7
 runTest $code $rightCode "Получение помощи, если отсутствуют необходимые ключи"

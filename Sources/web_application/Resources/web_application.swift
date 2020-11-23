@@ -1,9 +1,9 @@
 import Foundation
-func main(){
+public func main(){
   let container = Container()
   let parser = container.argumentsParser
 
-  guard let arguments = parser.parsing() else {
+  guard let arguments = parser.parsing(nil) else {
     exit(-1)
   }
   
@@ -35,5 +35,3 @@ func main(){
       exit(result)
   }
 }
-
-main()

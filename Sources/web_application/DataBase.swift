@@ -36,6 +36,8 @@ class DataBase: DataBaseProtocol{
     word.removeValue(forKey: language)
     if word.isEmpty{
       data?.removeValue(forKey: key)
+    } else {
+      data?[key]?.removeValue(forKey: language)
     }
     return 4
   }
@@ -116,7 +118,11 @@ class DataBase: DataBaseProtocol{
     }
   }
 
-  init () {
+  init() {
     data = loadJson(filename: "data")
+  }
+
+  init(data: [String: [String: String]]?) {
+    self.data = data
   }
 }

@@ -11,7 +11,7 @@ final class web_applicationTests: XCTestCase {
             return
         }
 
-        let fooBinary = productsDirectory.appendingPathComponent("web-application")
+        let fooBinary = productsDirectory.appendingPathComponent("web_application")
 
         let process = Process()
         process.executableURL = fooBinary
