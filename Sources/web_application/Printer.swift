@@ -1,15 +1,15 @@
 protocol PrinterProtocol {
-    func printing(_ string: String) -> Int32
+    func printing(_ string: String) -> ExitCode
 }
 
 class Printer: PrinterProtocol {
-    func printing(_ string: String) -> Int32 {
+    func printing(_ string: String) -> ExitCode {
         if string != "" {
             print(string)
-            return 0
+            return .success
         } else {
             print("No data found")
-            return 1
+            return .error(code: 1)
         }
     }
 }

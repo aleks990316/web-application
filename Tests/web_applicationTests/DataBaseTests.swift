@@ -66,6 +66,13 @@ final class DataBaseTests: XCTestCase {
         XCTAssertTrue(dataBase.getData()! == sampleData)
     }
 
+    func testEmptyBase() throws {
+        let newDataBase = DataBase(data: [ : ])
+        let argumentsType = ArgumentsType.key(value: "dog")
+        newDataBase.deleteData(argumentsType)
+        XCTAssertTrue(newDataBase.getData()! == [ : ])
+    }
+
     static var allTests = [
         ("testGetData", testGetData),
         ("testUpdateDataForNewKey", testUpdateDataForNewKey),
@@ -74,7 +81,8 @@ final class DataBaseTests: XCTestCase {
         ("testDeleteDataByKeyAndLanguage", testDeleteDataByKeyAndLanguageForTheOnlyTranslation),
         ("testDeleteDataByLanguage", testDeleteDataByLanguage),
         ("testDeleteDataByKey", testDeleteDataByKey),
-        ("testDeleteData", testDeleteData)
+        ("testDeleteData", testDeleteData),
+        ("testEmptyBase", testEmptyBase)
     ]
 }
 

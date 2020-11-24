@@ -2,8 +2,8 @@ import Foundation
 
 protocol DataBaseProtocol {
   func getData() -> [String: [String: String]]?
-  func updateData(_ word: String, _ key: String, _ language: String) -> Int32
-  func deleteData(_ arguments: ArgumentsType) -> Int32
+  func updateData(_ word: String, _ key: String, _ language: String) -> ExitCode
+  func deleteData(_ arguments: ArgumentsType) -> ExitCode
 }
 
 class DataBase: DataBaseProtocol{
@@ -14,24 +14,24 @@ class DataBase: DataBaseProtocol{
     return data
   }
   
-  func updateData(_ word: String, _ key: String, _ language: String) -> Int32{
+  func updateData(_ word: String, _ key: String, _ language: String) -> ExitCode {
     if data?[key] == nil { 
       data?.updateValue([language: word], forKey: key)
     } else {
       data?[key]?.updateValue(word, forKey: language)
     }
     uploadJSON(fileName: "data")
-    return 2
+    return .success
   }
 
-  private func deleteByKeyAndLanguage(_ key: String, _ language: String) -> Int32 {
+  private func deleteByKeyAndLanguage(_ key: String, _ language: String) -> ExitCode {
     guard var word = data?[key] else {
         print("No data found")
-        return 3
+        return .error(code: 3)
     }
     guard let _ = word[language] else {
         print("No data found")
-        return 3
+        return .error(code: 3)
     }
     word.removeValue(forKey: language)
     if word.isEmpty{
@@ -39,10 +39,10 @@ class DataBase: DataBaseProtocol{
     } else {
       data?[key]?.removeValue(forKey: language)
     }
-    return 4
+    return .success
   }
 
-  private func deleteByLanguage(_ language: String) -> Int32 {
+  private func deleteByLanguage(_ language: String) -> ExitCode {
     var result: Int32 = -1
     if var copyOfData = data {
       for (word, var translations) in copyOfData {
@@ -60,22 +60,26 @@ class DataBase: DataBaseProtocol{
         result = 3
       } else {
         data = copyOfData
-        result = 5
+        result = 0
       }
     }
-    return result
+    if result == 0 {
+      return .success
+    } else {
+      return .error(code: result)
+    }
   }
 
-  func deleteByKey(_ key: String) -> Int32 { 
+  private func deleteByKey(_ key: String) -> ExitCode { 
     if data?.removeValue(forKey: key) == nil {
       print("No data found")
-      return 3
+      return .error(code: 3)
     } 
-    return 6
+    return .success
   }
 
-  func deleteData(_ arguments: ArgumentsType) -> Int32{
-    let result: Int32
+  func deleteData(_ arguments: ArgumentsType) -> ExitCode {
+    let result: ExitCode
     switch arguments {
       case .keyAndLanguage(valueOfKey: let key, valueOfLanguage: let language):
         result = deleteByKeyAndLanguage(key, language)
@@ -85,7 +89,7 @@ class DataBase: DataBaseProtocol{
         result = deleteByKey(key)
       case .nothing:
         print("No data found")
-        result = 3
+        result = .error(code: 3)
     }
     uploadJSON(fileName: "data")
     return result
