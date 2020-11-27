@@ -6,3 +6,5 @@ var tests = [XCTestCaseEntry]()
 tests += web_applicationTests.allTests()
 XCTMain(tests)
  
+tests += allTests()
+XCTMain(tests)
