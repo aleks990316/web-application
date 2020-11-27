@@ -16,7 +16,6 @@ depends-top-level:
 - "ArgumentsParserProtocol"
 - "Array"
 - "CommandConfiguration"
-- !private "CommandLine"
 - "Commands"
 - "Delete"
 - !private "FloatLiteralType"
@@ -46,14 +45,14 @@ depends-member:
 - !private ["15web_application9ArgumentsO", "search"]
 - !private ["15web_application9ArgumentsO", "update"]
 - ["15web_application15ArgumentsParserC", "Arguments"]
-- !private ["15web_application15ArgumentsParserC", "CommandLine"]
 - !private ["15web_application15ArgumentsParserC", "Commands"]
+- ["15web_application15ArgumentsParserC", "String"]
 - ["15web_application15ArgumentsParserC", "deinit"]
 - ["15web_application15ArgumentsParserC", "init"]
 - ["15web_application15ArgumentsParserC", "parsing"]
 - ["15web_application23ArgumentsParserProtocolP", "Arguments"]
-- !private ["15web_application23ArgumentsParserProtocolP", "CommandLine"]
 - !private ["15web_application23ArgumentsParserProtocolP", "Commands"]
+- ["15web_application23ArgumentsParserProtocolP", "String"]
 - ["15web_application23ArgumentsParserProtocolP", ""]
 - ["15web_application23ArgumentsParserProtocolP", "parsing"]
 - !private ["Sa", "subscript"]
@@ -72,7 +71,6 @@ depends-member:
 - !private ["Sl", ""]
 - !private ["Sl", "subscript"]
 - ["14ArgumentParser20CommandConfigurationV", "init"]
-- !private ["s11CommandLineO", "arguments"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "=="]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -336,7 +334,6 @@ depends-nominal:
 - "s9CodingKeyP"
 - !private "Sl"
 - "14ArgumentParser20CommandConfigurationV"
-- !private "s11CommandLineO"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -383,8 +380,7 @@ depends-external:
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
 - "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.swiftmodule"
-- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/PrettyColors.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
-interface-hash: "c94c90108ed6d34e748adde9f5321251"
+interface-hash: "c516b105e0925af6219d8c48c623f670"
