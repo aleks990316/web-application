@@ -1,5 +1,3 @@
-import PrettyColors
-
 protocol FilterDataProtocol {
   func filter(_ arguments: ArgumentsType) -> String
 }

@@ -1,14 +1,13 @@
 import ArgumentParser
 
 protocol ArgumentsParserProtocol {
-  func parsing() -> Arguments?
+  func parsing(_ arguments: [String]?) -> Arguments?
 }
 
 class ArgumentsParser: ArgumentsParserProtocol {
-  func parsing() -> Arguments? {
+  func parsing(_ arguments: [String]?) -> Arguments? {
     do {
-      let arguments = CommandLine.arguments
-      let command = try Commands.parseAsRoot()
+      let command = try Commands.parseAsRoot(arguments)
       switch command {
         case let command as Commands.Search:
           return .search(key: command.key, language: command.language)
@@ -17,11 +16,11 @@ class ArgumentsParser: ArgumentsParserProtocol {
         case let command as Commands.Delete:
           return .delete(key: command.key, language: command.language)
         default:    
-          if arguments[1] == "search" {
+          if arguments?[0] == "search" {
             return .help(message: Commands.Search.helpMessage())
-          } else if arguments[1] == "update" {
+          } else if arguments?[0] == "update" {
             return .help(message: Commands.Update.helpMessage())
-          } else if arguments[1] == "delete" {
+          } else if arguments?[0] == "delete" {
             return .help(message: Commands.Delete.helpMessage())
           }
           //search -  команда по умолчанию
