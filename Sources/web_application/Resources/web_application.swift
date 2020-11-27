@@ -3,7 +3,7 @@ public func main() -> ExitCode {
   let parser = container.argumentsParser
 
   guard let arguments = parser.parsing(nil) else {
-    return .error(code: -1)
+    return .error(code: -1, "Parser did not parse")
   }
   
   let result: ExitCode

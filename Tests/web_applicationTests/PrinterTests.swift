@@ -13,19 +13,19 @@ final class PrinterTests: XCTestCase {
         let result = printer.printing("text")
         switch result {
             case .success:
-                XCTAssertTrue(true)
+                break
             default:
-                XCTFail()
+                XCTFail("Didn't text a message")
         }
     }
 
     func testPrinterEmpty() throws {
         let result = printer.printing("")
         switch result {
-            case .error(code: let code):
+            case .error(code: let code, _):
                 XCTAssertTrue(code == 1)
             default:
-                XCTFail()
+                XCTFail("Texted something")
         }
     }
 

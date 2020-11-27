@@ -27,11 +27,11 @@ class DataBase: DataBaseProtocol{
   private func deleteByKeyAndLanguage(_ key: String, _ language: String) -> ExitCode {
     guard var word = data?[key] else {
         print("No data found")
-        return .error(code: 3)
+        return .error(code: 3, "No data found")
     }
     guard let _ = word[language] else {
         print("No data found")
-        return .error(code: 3)
+        return .error(code: 3, "No data found")
     }
     word.removeValue(forKey: language)
     if word.isEmpty{
@@ -66,14 +66,14 @@ class DataBase: DataBaseProtocol{
     if result == 0 {
       return .success
     } else {
-      return .error(code: result)
+      return .error(code: result, "No data found")
     }
   }
 
   private func deleteByKey(_ key: String) -> ExitCode { 
     if data?.removeValue(forKey: key) == nil {
       print("No data found")
-      return .error(code: 3)
+      return .error(code: 3, "No data found")
     } 
     return .success
   }
@@ -89,7 +89,7 @@ class DataBase: DataBaseProtocol{
         result = deleteByKey(key)
       case .nothing:
         print("No data found")
-        result = .error(code: 3)
+        result = .error(code: 3, "No data found")
     }
     uploadJSON(fileName: "data")
     return result

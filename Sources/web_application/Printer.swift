@@ -9,7 +9,7 @@ class Printer: PrinterProtocol {
             return .success
         } else {
             print("No data found")
-            return .error(code: 1)
+            return .error(code: 1, "No data found")
         }
     }
 }
