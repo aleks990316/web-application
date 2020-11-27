@@ -1,0 +1,76 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Container"
+provides-nominal:
+- "15web_application9ContainerC"
+provides-member:
+- ["15web_application9ContainerC", ""]
+depends-top-level:
+- !private "ArgumentsFilter"
+- "ArgumentsFilterProtocol"
+- !private "ArgumentsParser"
+- "ArgumentsParserProtocol"
+- "Container"
+- !private "DataBase"
+- "DataBaseProtocol"
+- !private "FilterData"
+- "FilterDataProtocol"
+- !private "Printer"
+- "PrinterProtocol"
+- !private "dataBase"
+depends-member:
+- !private ["15web_application15ArgumentsFilterC", ""]
+- !private ["15web_application15ArgumentsFilterC", "init"]
+- !private ["15web_application23ArgumentsFilterProtocolP", "init"]
+- !private ["15web_application15ArgumentsParserC", ""]
+- !private ["15web_application15ArgumentsParserC", "init"]
+- !private ["15web_application23ArgumentsParserProtocolP", "init"]
+- !private ["15web_application9ContainerC", "ArgumentsFilter"]
+- ["15web_application9ContainerC", "ArgumentsFilterProtocol"]
+- !private ["15web_application9ContainerC", "ArgumentsParser"]
+- ["15web_application9ContainerC", "ArgumentsParserProtocol"]
+- !private ["15web_application9ContainerC", "DataBase"]
+- ["15web_application9ContainerC", "DataBaseProtocol"]
+- !private ["15web_application9ContainerC", "FilterData"]
+- ["15web_application9ContainerC", "FilterDataProtocol"]
+- !private ["15web_application9ContainerC", "Printer"]
+- ["15web_application9ContainerC", "PrinterProtocol"]
+- ["15web_application9ContainerC", "argumentsParser"]
+- ["15web_application9ContainerC", "dataBase"]
+- ["15web_application9ContainerC", "deinit"]
+- ["15web_application9ContainerC", "filterData"]
+- ["15web_application9ContainerC", "filterOfArguments"]
+- ["15web_application9ContainerC", "init"]
+- ["15web_application9ContainerC", "printer"]
+- !private ["15web_application8DataBaseC", ""]
+- !private ["15web_application8DataBaseC", "init"]
+- !private ["15web_application16DataBaseProtocolP", "init"]
+- !private ["15web_application10FilterDataC", ""]
+- !private ["15web_application10FilterDataC", "init"]
+- !private ["15web_application18FilterDataProtocolP", "init"]
+- !private ["15web_application7PrinterC", ""]
+- !private ["15web_application7PrinterC", "init"]
+- !private ["15web_application15PrinterProtocolP", "init"]
+depends-nominal:
+- !private "15web_application15ArgumentsFilterC"
+- !private "15web_application23ArgumentsFilterProtocolP"
+- !private "15web_application15ArgumentsParserC"
+- !private "15web_application23ArgumentsParserProtocolP"
+- "15web_application9ContainerC"
+- !private "15web_application8DataBaseC"
+- !private "15web_application16DataBaseProtocolP"
+- !private "15web_application10FilterDataC"
+- !private "15web_application18FilterDataProtocolP"
+- !private "15web_application7PrinterC"
+- !private "15web_application15PrinterProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/ArgumentParser.swiftmodule"
+- "/home/aleksandr/\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B/GitHub/web-application/.build/x86_64-unknown-linux-gnu/debug/PrettyColors.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/aleksandr/swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "580bb8db3b350303c01d3457d2337860"
