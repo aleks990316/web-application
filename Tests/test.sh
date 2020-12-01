@@ -22,6 +22,8 @@ numberOfTests=0
 numberOfSuccessfulTests=0
 numberOfFailedTests=0
 
+swift build
+
 ./.build/debug/Run search
 code=$?
 rightCode=0
