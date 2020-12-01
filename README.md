@@ -9,7 +9,7 @@
     
     OVERVIEW: Dictionary
 
-    USAGE: swit run web-application <subcommand>
+    USAGE: ./.build/debug/Run <subcommand>
 
     OPTIONS:
     -h, --help              Show help information.
@@ -18,7 +18,7 @@
     search (default)        Search throw dictionary
         OVERVIEW: Search throw dictionary
 
-        USAGE: swift run web-application search [-k <k>] [-l <l>]
+        USAGE: ./.build/debug/Run search [-k <k>] [-l <l>]
 
         OPTIONS:
         -k <k>                  word 
@@ -27,7 +27,7 @@
     update                  Add new data to dictionary
         OVERVIEW: Add new data to dictionary
 
-        USAGE: swift run update <word> -k <k> -l <l>
+        USAGE: ./.build/debug/Run update <word> -k <k> -l <l>
 
         ARGUMENTS:
         <word>                  A word to add
@@ -39,11 +39,17 @@
     delete                  Delete data from dictionary
         OVERVIEW: Delete data from dictionary
 
-        USAGE: swift run web-application delete [-k <k>] [-l <l>]
+        USAGE: ./.build/debug/Run web-application delete [-k <k>] [-l <l>]
 
         OPTIONS:
             -k <k>                  word 
             -l <l>                  language 
             -h, --help              Show help information.
-
-Добавлена библиотека PrettyColors, которая позволяет менять цвет и шрифт консольного вывода. Можно явно отделять язык от перевода на этом языке и т.д.
+###Тестирование проекта
+Системный тест:
+>
+    Tests/test.sh
+   
+Юнит-тест:
+>
+    swift test
