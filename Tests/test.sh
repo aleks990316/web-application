@@ -22,8 +22,6 @@ numberOfTests=0
 numberOfSuccessfulTests=0
 numberOfFailedTests=0
 
-swift build
-
 ./.build/debug/Run search
 code=$?
 rightCode=0
@@ -157,3 +155,10 @@ rightCode=0
 runTest $code $rightCode "Получение помощи, если отсутствуют необходимые ключи"
 
 results
+
+if [ "$numberOfFailedTests" -gt "0" ]
+then 
+    exit 1
+else
+    exit 0
+fi
