@@ -46,6 +46,6 @@ jobs:
     needs: setup_swift
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checout@v2
+      - uses: actions/checkout@v2
       - run: swift build
       - run: swift test
