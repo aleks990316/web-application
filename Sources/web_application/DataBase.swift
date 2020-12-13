@@ -21,7 +21,7 @@ class DataBase: DataBaseProtocol{
       data?[key]?.updateValue(word, forKey: language)
     }
     uploadJSON(fileName: "data")
-    return .success
+    return .success(answer: "Data has been updated successfully")
   }
 
   private func deleteByKeyAndLanguage(_ key: String, _ language: String) -> ExitCode {
@@ -39,7 +39,7 @@ class DataBase: DataBaseProtocol{
     } else {
       data?[key]?.removeValue(forKey: language)
     }
-    return .success
+    return .success(answer: "Data has been deleted successfully")
   }
 
   private func deleteByLanguage(_ language: String) -> ExitCode {
@@ -64,7 +64,7 @@ class DataBase: DataBaseProtocol{
       }
     }
     if result == 0 {
-      return .success
+      return .success(answer: "Data has been deleted successfully")
     } else {
       return .error(code: result, "No data found")
     }
@@ -75,7 +75,7 @@ class DataBase: DataBaseProtocol{
       print("No data found")
       return .error(code: 3, "No data found")
     } 
-    return .success
+    return .success(answer: "Data has been deleted successfully")
   }
 
   func deleteData(_ arguments: ArgumentsType) -> ExitCode {

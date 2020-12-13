@@ -8,7 +8,7 @@ final class FilterDataTests: XCTestCase {
     private var sampleData = ["day": ["en": "Day", "ru": "День"], "night": ["en": "Night", "ru": "Ночь"], "cat": ["en": "Cat"]]
 
     func testFilterByKeyAndLanguage() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.keyAndLanguage(valueOfKey: "day", valueOfLanguage: "en")
         let result = filterData.filter(arguments)
@@ -17,12 +17,12 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsGetData == 1)
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testFilterByKeyAndLanguageEmpty() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.keyAndLanguage(valueOfKey: "pig", valueOfLanguage: "en")
         let result = filterData.filter(arguments)
@@ -31,12 +31,12 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsGetData == 1)
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testFilterByKey() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.key(value: "cat")
         let result = filterData.filter(arguments)
@@ -46,12 +46,12 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsGetData == 1)
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testFilterByKeyEmpty() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.key(value: "pig")
         let result = filterData.filter(arguments)
@@ -61,12 +61,12 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsGetData == 1)
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testFilterByLanguage() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.language(value: "ru")
         let result = filterData.filter(arguments)
@@ -76,12 +76,12 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsGetData == 1)
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testFilterByLanguageEmpty() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.language(value: "it")
         let result = filterData.filter(arguments)
@@ -91,12 +91,12 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsGetData == 1)
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testFilter() throws {
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let arguments = ArgumentsType.nothing
         let result = filterData.filter(arguments)
@@ -107,14 +107,14 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(sampleData == dataBase.sampleData!)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
     func testEmpty() throws {
         let arguments = ArgumentsType.nothing
         sampleData = [ : ]
-        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success, returnDeleteData: .success)
+        dataBase = DataBaseMock(data: sampleData, returnUpdateData: .success(answer: "answer"), returnDeleteData: .success(answer: "answer"))
         filterData = FilterData(dataBase: dataBase)
         let result = filterData.filter(arguments)
         XCTAssertTrue("" == result)
@@ -122,8 +122,8 @@ final class FilterDataTests: XCTestCase {
         XCTAssertTrue(dataBase.numberOfCallsDeleteData == 0)
         XCTAssertTrue(sampleData == dataBase.sampleData!)
         XCTAssertTrue(dataBase.numberOfCallsUpdateData == 0)
-        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success)
-        XCTAssertTrue(dataBase.deleteData(.nothing) == .success)
+        XCTAssertTrue(dataBase.updateData("word", "key", "language") == .success(answer: "answer"))
+        XCTAssertTrue(dataBase.deleteData(.nothing) == .success(answer: "answer"))
     }
 
         

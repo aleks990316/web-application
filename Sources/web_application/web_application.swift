@@ -1,8 +1,8 @@
-public func main() -> ExitCode {
+public func main(_ args: [String]?) -> ExitCode {
   let container = Container()
   let parser = container.argumentsParser
 
-  guard let arguments = parser.parsing(nil) else {
+  guard let arguments = parser.parsing(args) else {
     return .error(code: -1, "Parser did not parse")
   }
   

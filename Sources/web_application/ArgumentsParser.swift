@@ -28,7 +28,14 @@ class ArgumentsParser: ArgumentsParserProtocol {
       }
     }
     catch {
-      return Arguments.help(message: Commands.helpMessage())
+      if arguments?[0] == "search" {
+            return .help(message: Commands.Search.helpMessage())
+          } else if arguments?[0] == "update" {
+            return .help(message: Commands.Update.helpMessage())
+          } else if arguments?[0] == "delete" {
+            return .help(message: Commands.Delete.helpMessage())
+          }
+          return Arguments.help(message: Commands.helpMessage())
     }
   }
 }
