@@ -8,18 +8,17 @@ struct ControllerSearch: RouteCollection {
 
     func search(req: Request) throws -> EventLoopFuture<String> {
         let parametres = try? req.query.decode(Parameters.self)
-        var query = ["search"]
         req.logger.info("Parametres: \(parametres?.key ?? "") \(parametres?.language ?? "")")
         let key = parametres?.key
         let language = parametres?.language
-        if let key = key {
-            query += ["-k", key]
-        }
-        if let language = language {
-            query += ["-l", language]
-        }
-        let exitCode = main(query)
-        switch exitCode {
+        let container = Container()
+        let argumentsFilter = container.filterOfArguments
+        let keys = argumentsFilter.filter(key, language)
+        let dataFilter = container.filterData
+        let filteredData = dataFilter.filter(keys)
+        let printer = container.printer
+        let result = printer.printing(filteredData)
+        switch result {
         case .success(answer: let answer):
             return req.eventLoop.future(answer ?? "")
         case .error(code: let code, let description):

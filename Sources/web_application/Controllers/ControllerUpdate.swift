@@ -8,22 +8,14 @@ struct ControllerUpdate: RouteCollection {
 
     func update(req: Request) throws -> EventLoopFuture<String> {
         let parametres = try? req.query.decode(Parameters.self)
-        var query = ["update"]
         req.logger.info("Parametres: \(parametres?.key ?? "") \(parametres?.language ?? "") \(parametres?.word ?? "")")
-        let key = parametres?.key
-        let language = parametres?.language
-        let word = parametres?.word
-        if let word = word {
-            query.append(word)
+        guard let key = parametres?.key, let language = parametres?.language, let word = parametres?.word else {
+            return req.eventLoop.future("Не все параметры переданы")
         }
-        if let key = key {
-            query += ["-k", key]
-        }
-        if let language = language {
-            query += ["-l", language]
-        }
-        let exitCode = main(query)
-        switch exitCode {
+        let container = Container()
+        let dataBase = container.dataBase
+        let result = dataBase.updateData(word, key.lowercased(), language.lowercased())
+        switch result {
         case .success(answer: let answer):
             return req.eventLoop.future(answer ?? "")
         case .error(code: let code, let description):
