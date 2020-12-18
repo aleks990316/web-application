@@ -226,7 +226,7 @@ final class ArgumentParserTests: XCTestCase {
         
         switch result {
             case .help(let message):
-                XCTAssertTrue(message.hasPrefix("USAGE: commands <subcommand>"))
+                XCTAssertTrue(message.hasPrefix("USAGE: search [-k <k>] [-l <l>]"))
             default:
                 XCTFail("Wrong parsing")
         }
