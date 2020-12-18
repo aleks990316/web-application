@@ -1,6 +1,12 @@
 import Vapor
 
 struct ControllerUpdate: RouteCollection {
+    let container: Container
+    
+    init() {
+        container = Container()
+    }
+
     func boot(routes: RoutesBuilder) throws {
         let group = routes.grouped("update")
         group.get(use: update)
@@ -12,7 +18,6 @@ struct ControllerUpdate: RouteCollection {
         guard let key = parametres?.key, let language = parametres?.language, let word = parametres?.word else {
             return req.eventLoop.future("Не все параметры переданы")
         }
-        let container = Container()
         let dataBase = container.dataBase
         let result = dataBase.updateData(word, key.lowercased(), language.lowercased())
         switch result {

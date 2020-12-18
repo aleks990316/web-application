@@ -1,6 +1,6 @@
 import Vapor 
 func routes(_ app: Application) throws {
-    try app.register(collection: ControllerSearch())
-    try app.register(collection: ControllerUpdate())
-    try app.register(collection: ControllerDelete())
+    try app.register(collection: app.containerAPI.searchController)
+    try app.register(collection: app.containerAPI.updateController)
+    try app.register(collection: app.containerAPI.deleteController)
 }

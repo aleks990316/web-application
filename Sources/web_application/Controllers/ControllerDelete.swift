@@ -1,6 +1,12 @@
 import Vapor
 
 struct ControllerDelete: RouteCollection {
+    let container: Container
+
+    init() {
+        container = Container()
+    }
+
     func boot(routes: RoutesBuilder) throws {
         let group = routes.grouped("delete")
         group.get(use: search)
@@ -11,7 +17,6 @@ struct ControllerDelete: RouteCollection {
         req.logger.info("Parametres: \(parametres?.key ?? "") \(parametres?.language ?? "")")
         let key = parametres?.key
         let language = parametres?.language
-        let container = Container()
         let argumentsFilter = container.filterOfArguments
         let keys = argumentsFilter.filter(key, language)
         let dataBase = container.dataBase

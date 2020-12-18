@@ -1,6 +1,13 @@
 import Vapor
 
 struct ControllerSearch: RouteCollection {
+
+    let container: Container 
+
+    init() {
+        container = Container()
+    }
+    
     func boot(routes: RoutesBuilder) throws {
         let group = routes.grouped("search")
         group.get(use: search)
@@ -11,7 +18,6 @@ struct ControllerSearch: RouteCollection {
         req.logger.info("Parametres: \(parametres?.key ?? "") \(parametres?.language ?? "")")
         let key = parametres?.key
         let language = parametres?.language
-        let container = Container()
         let argumentsFilter = container.filterOfArguments
         let keys = argumentsFilter.filter(key, language)
         let dataFilter = container.filterData
